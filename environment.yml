@@ -1,0 +1,9 @@
+name: cartopy
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - matplotlib=3.5.2
+  - numpy=1.26.0
+  - cartopy=0.21.1
+  - pytest=5.1.2

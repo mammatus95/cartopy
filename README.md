@@ -1,40 +1,39 @@
-# CartoPy
+# CartoPy Guide
 
 Cartopy is a new map plotting tool/package for python3.X
-and will replace the basemap package in 2020 when the Python2.7 support is EoL’ed.
-(More pieces of information further down.)
+and has replaced the basemap package.
 
 
 ## Installation
 
-See here:
-https://scitools.org.uk/cartopy/docs/latest/installing.html#installing
-
 ### Conda
 ```bash
-conda install -c conda-forge cartopy
+conda env create -f environment.yml
+
+conda activate cartopy
 ```
 
+Add to notebook:
+
+```bash
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=cartopy
+```
+See for more information here:
+https://scitools.org.uk/cartopy/docs/latest/installing.html#installing
+
 ### Requirements
-Python 2.7 or higher 
+Python 3.9 or higher 
 
-##### required Packages
-NumPy 1.10, 
-GEOS 3.3.3, 
-Shapely 1.5.6, 
-pyshp 1.1.4, 
-PROJ 4.9.0
-and six 1.3.0
-
+##### Required packages
+- Matplotlib 3.4
+- Shapely 1.7.1
+- pyshp 2.1
+- pyproj 3.1.0
+- pytest 5.1.2 (needed for full testing)
+- pytest-mpl 0.11
 ![Cartopy Example](images/de.png)
 
-
-### Will Cartopy replace Basemap?
-
-To answer this question a link to a official announcement from the Basemap site:
-https://matplotlib.org/basemap/users/intro.html#cartopy-new-management-and-eol-announcement
-
-Newer developments are not known ...  we will see.
 
 ### Shapes and shapereader
 
