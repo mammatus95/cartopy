@@ -3,6 +3,7 @@
 Cartopy is a new map plotting tool/package for python3.X
 and has replaced the basemap package.
 
+![Cartopy Example](images/de.png)
 
 ## Installation
 
@@ -32,8 +33,6 @@ Python 3.9 or higher
 - pyproj 3.1.0
 - pytest 5.1.2 (needed for full testing)
 - pytest-mpl 0.11
-![Cartopy Example](images/de.png)
-
 
 ### Shapes and shapereader
 
